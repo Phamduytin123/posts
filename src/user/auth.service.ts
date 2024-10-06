@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable } from "@nestjs/common";
+import { BadRequestException, Injectable, Request } from "@nestjs/common";
 import { UserService } from "./user.service";
 import { JwtService } from "@nestjs/jwt";
 import { RegisterUserDto } from "./dtos/registerUserDto";

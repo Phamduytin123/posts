@@ -29,6 +29,8 @@ export class AuthGuard implements CanActivate {
                 throw new BadRequestException('User not belong to token, please try again')
             }
             request.currentUser = user;
+            // console.log(request.currentUser);
+
         } catch {
             throw new UnauthorizedException();
         }
